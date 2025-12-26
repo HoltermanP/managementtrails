@@ -14,7 +14,7 @@ export default function TrailsPage() {
           Onze Management Trails
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Kies uit onze zorgvuldig samengestelde trails in Oostenrijk, ontworpen om uw managementteam
+          Kies uit onze zorgvuldig samengestelde trails in Niederau & Wildschönau, ontworpen om uw managementteam
           te inspireren en te ontwikkelen in een unieke natuurlijke omgeving.
         </p>
       </div>
@@ -86,3 +86,5 @@ export default function TrailsPage() {
     </div>
   )
 }
+
+

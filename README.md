@@ -126,3 +126,6 @@ Voor vragen over de website of het project:
 ---
 
 **Let op:** Voordat u naar GitHub pusht, zorg ervoor dat er geen TypeScript fouten zijn door `npm run build` uit te voeren.
+
+
+

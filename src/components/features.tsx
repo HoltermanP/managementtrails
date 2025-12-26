@@ -4,8 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 const features = [
   {
     icon: Mountain,
-    title: 'Oostenrijkse Alpen',
-    description: 'Ervaar de inspirerende kracht van de Oostenrijkse bergen tijdens uw management trail.'
+    title: 'Kitzbüheler Alpen',
+    description: 'Ervaar de inspirerende kracht van de Kitzbüheler Alpen in Niederau & Wildschönau tijdens uw management trail.'
   },
   {
     icon: Users,
@@ -33,7 +33,7 @@ export function Features() {
             Waarom kiezen voor Management Trails?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ontdek hoe een trail in Oostenrijk uw managementteam kan transformeren
+            Ontdek hoe een trail in Niederau & Wildschönau uw managementteam kan transformeren
           </p>
         </div>
 
@@ -58,3 +58,5 @@ export function Features() {
     </section>
   )
 }
+
+

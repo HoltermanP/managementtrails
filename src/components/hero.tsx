@@ -8,7 +8,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop"
+          src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&h=1080&fit=crop"
           alt="Oostenrijkse Alpen - Management Trails"
           fill
           className="object-cover"
@@ -23,7 +23,7 @@ export function Hero() {
           Management Trails
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-200">
-          Breng uw managementteam naar de Oostenrijkse Alpen voor inspiratie, strategie en teamontwikkeling
+          Breng uw managementteam naar Niederau & Wildschönau in de Kitzbüheler Alpen voor inspiratie, strategie en teamontwikkeling
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" asChild className="text-lg px-8 py-3">
@@ -37,3 +37,5 @@ export function Hero() {
     </section>
   )
 }
+
+

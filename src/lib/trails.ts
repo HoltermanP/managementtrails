@@ -17,12 +17,12 @@ export const trails: Trail[] = [
   {
     id: 'alpine-leadership',
     title: 'Alpine Leadership Trail',
-    description: 'Een intensieve trail gericht op leiderschapsontwikkeling in de Oostenrijkse Alpen. Ontdek hoe natuurlijke uitdagingen parallellen trekken met zakelijke obstakels.',
-    location: 'Tirol, Oostenrijk',
+    description: 'Een intensieve trail gericht op leiderschapsontwikkeling in de Kitzbüheler Alpen. Ontdek hoe natuurlijke uitdagingen parallellen trekken met zakelijke obstakels.',
+    location: 'Niederau, Kitzbüheler Alpen',
     duration: '5 dagen',
     maxParticipants: 8,
     price: 4000,
-    image: 'https://images.unsplash.com/photo-1464822759844-d150f39bf846?w=800&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop',
     highlights: [
       'Persoonlijke leiderschapsanalyse',
       'Team building oefeningen in de bergen',
@@ -41,12 +41,12 @@ export const trails: Trail[] = [
   {
     id: 'strategic-vision',
     title: 'Strategic Vision Trail',
-    description: 'Ontwikkel strategisch denken en visie tijdens deze inspirerende trail. De Oostenrijkse natuur dient als metafoor voor langetermijnplanning.',
-    location: 'Salzburg, Oostenrijk',
+    description: 'Ontwikkel strategisch denken en visie tijdens deze inspirerende trail. De natuur van de Kitzbüheler Alpen dient als metafoor voor langetermijnplanning.',
+    location: 'Wildschönau, Kitzbüheler Alpen',
     duration: '5 dagen',
     maxParticipants: 8,
     price: 4000,
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
     highlights: [
       'Strategische visie oefeningen',
       'Innovatie workshops',
@@ -65,12 +65,12 @@ export const trails: Trail[] = [
   {
     id: 'team-dynamics',
     title: 'Team Dynamics Trail',
-    description: 'Versterk teamdynamiek en samenwerking in een uitdagende omgeving. Leer van elkaar terwijl u samen de bergen trotseert.',
-    location: 'Vorarlberg, Oostenrijk',
+    description: 'Versterk teamdynamiek en samenwerking in een uitdagende omgeving. Leer van elkaar terwijl u samen de bergen van de Kitzbüheler Alpen trotseert.',
+    location: 'Niederau & Wildschönau, Kitzbüheler Alpen',
     duration: '5 dagen',
     maxParticipants: 8,
     price: 4000,
-    image: 'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1464822759844-d150f39bf846?w=800&h=600&fit=crop',
     highlights: [
       'Team performance analyse',
       'Communicatie oefeningen',
@@ -87,3 +87,5 @@ export const trails: Trail[] = [
     difficulty: 'Uitdagend'
   }
 ]
+
+

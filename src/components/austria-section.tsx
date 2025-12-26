@@ -1,27 +1,27 @@
 import Image from 'next/image'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Mountain, Heart, Coffee, Camera } from 'lucide-react'
+import { Mountain, Heart, Coffee, Camera, MapPin, TreePine } from 'lucide-react'
 
-const austriaFacts = [
+const niederauFacts = [
   {
     icon: Mountain,
-    title: 'Alpen Landschap',
-    description: 'De Oostenrijkse Alpen bieden een inspirerende omgeving voor reflectie en strategische denken.'
+    title: 'Kitzbüheler Alpen',
+    description: 'In het hart van de Kitzbüheler Alpen bieden Niederau & Wildschönau een adembenemende natuurlijke omgeving voor reflectie en strategische denken.'
+  },
+  {
+    icon: TreePine,
+    title: 'Wandelmogelijkheden',
+    description: 'Ontdek uitgebreide wandelroutes die variëren van ontspannen boswandelingen tot uitdagende bergtochten, perfect voor teamontwikkeling.'
   },
   {
     icon: Heart,
     title: 'Oostenrijkse Gastvrijheid',
-    description: 'Ervaar de warme Oostenrijkse gastvrijheid en excellente service tijdens uw verblijf.'
-  },
-  {
-    icon: Coffee,
-    title: 'Lokale Cultuur',
-    description: 'Ontdek de rijke Oostenrijkse cultuur, van traditionele koffiehuizen tot moderne innovatie.'
+    description: 'Ervaar de warme Oostenrijkse gastvrijheid en excellente service tijdens uw verblijf in deze pittoreske regio.'
   },
   {
     icon: Camera,
     title: 'Natuurlijke Schoonheid',
-    description: 'Geniet van adembenemende uitzichten die creativiteit en inspiratie stimuleren.'
+    description: 'Geniet van kristalheldere bergmeren, groene valleien en majestueuze bergtoppen die creativiteit en inspiratie stimuleren.'
   }
 ]
 
@@ -31,11 +31,11 @@ export function AustriaSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Waarom Oostenrijk?
+            Niederau & Wildschönau
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            De Oostenrijkse Alpen vormen het perfecte decor voor managementontwikkeling.
-            Hier combineren we natuurlijke schoonheid met Oostenrijkse precisie en kwaliteit.
+            Meer informatie over de prachtige omgeving in het hart van de Kitzbüheler Alpen,
+            met details over de wandelmogelijkheden en natuurlijke schoonheid.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export function AustriaSection() {
           {/* Image */}
           <div className="relative h-96 rounded-lg overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop"
+              src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&h=600&fit=crop"
               alt="Oostenrijkse Alpen - Tirol"
               fill
               className="object-cover"
@@ -52,23 +52,24 @@ export function AustriaSection() {
 
           {/* Content */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold">De Perfecte Locatie voor Leiderschap</h3>
+            <h3 className="text-2xl font-bold">Het Hart van de Kitzbüheler Alpen</h3>
             <p className="text-muted-foreground">
-              Oostenrijk staat wereldwijd bekend om zijn precisie, kwaliteit en innovatie.
-              Deze waarden vormen de basis van onze management trails. In de Alpen vinden
-              uw managers niet alleen rust en inspiratie, maar ook de ruimte om diepgaand
-              na te denken over strategie en leiderschap.
+              Niederau & Wildschönau liggen in het hart van de Kitzbüheler Alpen, een regio
+              die bekend staat om zijn natuurlijke schoonheid en uitstekende wandelmogelijkheden.
+              Hier combineren we de Oostenrijkse precisie en kwaliteit met een unieke natuurlijke
+              omgeving die perfect is voor managementontwikkeling.
             </p>
             <p className="text-muted-foreground">
-              Van de kristalheldere bergmeren tot de steile rotswanden - elke trail is
-              zorgvuldig ontworpen om parallellen te trekken tussen natuurlijke uitdagingen
-              en zakelijke obstakels.
+              Van ontspannen wandelingen door groene valleien tot uitdagende bergtochten - elke trail
+              is zorgvuldig ontworpen om parallellen te trekken tussen de natuurlijke schoonheid van
+              deze regio en zakelijke uitdagingen. De kristalheldere bergmeren, dichte bossen en
+              majestueuze bergtoppen bieden de ideale setting voor reflectie en strategisch denken.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="text-center p-4 bg-muted/50 rounded-lg">
-                <div className="text-2xl font-bold text-primary">3</div>
-                <div className="text-sm text-muted-foreground">Regio's</div>
+                <div className="text-2xl font-bold text-primary">200km+</div>
+                <div className="text-sm text-muted-foreground">Wandelroutes</div>
               </div>
               <div className="text-center p-4 bg-muted/50 rounded-lg">
                 <div className="text-2xl font-bold text-primary">2000m+</div>
@@ -78,9 +79,9 @@ export function AustriaSection() {
           </div>
         </div>
 
-        {/* Austria Facts */}
+        {/* Niederau Facts */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {austriaFacts.map((fact, index) => (
+          {niederauFacts.map((fact, index) => (
             <Card key={index} className="text-center">
               <CardHeader>
                 <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
@@ -97,69 +98,56 @@ export function AustriaSection() {
           ))}
         </div>
 
-        {/* Locations */}
+        {/* Niederau & Wildschonau Details */}
         <div className="mt-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Onze Trail Locaties</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <h3 className="text-2xl font-bold text-center mb-8">Waarom Niederau & Wildschönau?</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle>Tirol</CardTitle>
-                <CardDescription>Het hart van de Oostenrijkse Alpen</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="relative h-32 mb-4 rounded overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=200&fit=crop"
-                    alt="Tirol, Oostenrijk"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <p className="text-sm text-muted-foreground">
-                  Bekend om zijn majestueuze bergen en kristalheldere meren.
-                  Perfect voor reflectie en strategische workshops.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Salzburg</CardTitle>
-                <CardDescription>Mozarts geboortestad</CardDescription>
+                <CardTitle className="flex items-center gap-2">
+                  <MapPin className="h-5 w-5" />
+                  Niederau
+                </CardTitle>
+                <CardDescription>Het centrum van de regio</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="relative h-32 mb-4 rounded overflow-hidden">
                   <Image
                     src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=200&fit=crop"
-                    alt="Salzburg, Oostenrijk"
+                    alt="Niederau, Kitzbüheler Alpen"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Combineert klassieke Oostenrijkse cultuur met moderne
-                  innovatie. Inspirerend voor creatief denken.
+                  Het charmante centrum van de regio met uitstekende toegang tot
+                  wandelroutes en natuurlijke schoonheid. Perfect voor reflectie
+                  en strategische workshops.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Vorarlberg</CardTitle>
-                <CardDescription>De meest westelijke deelstaat</CardDescription>
+                <CardTitle className="flex items-center gap-2">
+                  <TreePine className="h-5 w-5" />
+                  Wildschönau
+                </CardTitle>
+                <CardDescription>De groene vallei</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="relative h-32 mb-4 rounded overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=400&h=200&fit=crop"
-                    alt="Vorarlberg, Oostenrijk"
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=200&fit=crop"
+                    alt="Wildschönau, Kitzbüheler Alpen"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Uitdagende trails voor teams die houden van avontuur
-                  en grensverleggende ervaringen.
+                  Een pittoreske vallei omgeven door majestueuze bergen.
+                  Uitstekende wandelmogelijkheden voor teams die houden van
+                  natuurlijke schoonheid en avontuur.
                 </p>
               </CardContent>
             </Card>
@@ -169,3 +157,5 @@ export function AustriaSection() {
     </section>
   )
 }
+
+
