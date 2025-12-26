@@ -73,15 +73,51 @@ export default function TrailsPage() {
         ))}
       </div>
 
-      <div className="mt-16 text-center bg-muted/50 rounded-lg p-8">
-        <h2 className="text-2xl font-bold mb-4">Interesse in een Custom Trail?</h2>
-        <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-          Wilt u een trail die perfect aansluit bij uw specifieke behoeften?
-          We kunnen een volledig op maat gemaakte trail ontwikkelen voor uw team.
-        </p>
-        <Button size="lg" asChild>
-          <Link href="/contact">Neem Contact Op</Link>
-        </Button>
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <Card className="text-center hover:shadow-lg transition-shadow">
+          <CardHeader>
+            <CardTitle>Interesse in een Custom Trail?</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-muted-foreground">
+              Wilt u een trail die perfect aansluit bij uw specifieke behoeften?
+              We kunnen een volledig op maat gemaakte trail ontwikkelen voor uw team.
+            </p>
+            <Button asChild className="w-full">
+              <Link href="/contact">Neem Contact Op</Link>
+            </Button>
+          </CardContent>
+        </Card>
+
+        <Card className="text-center hover:shadow-lg transition-shadow">
+          <CardHeader>
+            <CardTitle>Meer over de Locatie</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-muted-foreground">
+              Ontdek alles over Niederau & Wildschönau, het hart van de Kitzbüheler Alpen,
+              en waarom deze locatie perfect is voor uw management trail.
+            </p>
+            <Button variant="outline" asChild className="w-full">
+              <Link href="/locatie">Ontdek de Locatie</Link>
+            </Button>
+          </CardContent>
+        </Card>
+
+        <Card className="text-center hover:shadow-lg transition-shadow">
+          <CardHeader>
+            <CardTitle>Off-Grid Concept</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-muted-foreground">
+              Leer meer over ons unieke "No Mobile" concept en hoe volledige digitale
+              disconnectie leidt tot diepere connectie en transformatie.
+            </p>
+            <Button variant="outline" asChild className="w-full">
+              <Link href="/off-grid">Lees Meer</Link>
+            </Button>
+          </CardContent>
+        </Card>
       </div>
     </div>
   )

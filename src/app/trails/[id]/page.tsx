@@ -83,16 +83,46 @@ export default function TrailPage({ params }: TrailPageProps) {
           <Card>
             <CardHeader>
               <CardTitle>Activiteiten</CardTitle>
+              <CardDescription>
+                Ontdek wat u tijdens deze trail gaat doen
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {trail.activities.map((activity, index) => (
-                  <div key={index} className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+                  <div key={index} className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg hover:bg-muted transition-colors">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
                     <span>{activity}</span>
                   </div>
                 ))}
               </div>
+            </CardContent>
+          </Card>
+
+          {/* Related Links */}
+          <Card>
+            <CardHeader>
+              <CardTitle>Meer Informatie</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <Button variant="outline" asChild className="w-full justify-start">
+                <Link href="/locatie">
+                  <MapPin className="h-4 w-4 mr-2" />
+                  Ontdek de locatie: Niederau & Wildschönau
+                </Link>
+              </Button>
+              <Button variant="outline" asChild className="w-full justify-start">
+                <Link href="/accommodatie">
+                  <Home className="h-4 w-4 mr-2" />
+                  Meer over de accommodatie
+                </Link>
+              </Button>
+              <Button variant="outline" asChild className="w-full justify-start">
+                <Link href="/off-grid">
+                  <CheckCircle className="h-4 w-4 mr-2" />
+                  Over het Off-Grid concept
+                </Link>
+              </Button>
             </CardContent>
           </Card>
         </div>
@@ -146,20 +176,25 @@ export default function TrailPage({ params }: TrailPageProps) {
           </Card>
 
           {/* Accommodation */}
-          <Card>
+          <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Home className="h-5 w-5" />
                 Accommodatie
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-4">
               <p className="text-sm text-muted-foreground">
                 {trail.accommodation}
               </p>
-              <p className="text-sm text-muted-foreground mt-2">
+              <p className="text-sm text-muted-foreground">
                 Inclusief 4 overnachtingen voor uw hele groep.
               </p>
+              <Button variant="outline" asChild className="w-full">
+                <Link href="/accommodatie">
+                  Meer over de accommodatie
+                </Link>
+              </Button>
             </CardContent>
           </Card>
 

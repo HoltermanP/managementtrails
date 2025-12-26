@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
@@ -231,24 +232,61 @@ export default function ContactPage() {
               <CardContent className="space-y-4">
                 <div>
                   <h4 className="font-medium mb-2">Wat is de maximale groepsgrootte?</h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground mb-2">
                     Al onze trails zijn ontworpen voor maximaal 8 personen voor optimale interactie.
                   </p>
+                  <Button variant="link" asChild className="p-0 h-auto text-sm">
+                    <Link href="/trails">Bekijk alle trails →</Link>
+                  </Button>
                 </div>
 
                 <div>
                   <h4 className="font-medium mb-2">Kan ik een custom trail aanvragen?</h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground mb-2">
                     Ja, we ontwikkelen graag trails op maat voor uw specifieke behoeften.
                   </p>
+                  <Button variant="link" asChild className="p-0 h-auto text-sm">
+                    <Link href="/over-ons">Lees meer over ons →</Link>
+                  </Button>
                 </div>
 
                 <div>
                   <h4 className="font-medium mb-2">Wat is de duur van een trail?</h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground mb-2">
                     Standaard 5 dagen inclusief 4 overnachtingen in een luxe penthouse.
                   </p>
+                  <Button variant="link" asChild className="p-0 h-auto text-sm">
+                    <Link href="/accommodatie">Meer over accommodatie →</Link>
+                  </Button>
                 </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Meer Informatie</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <Button variant="outline" asChild className="w-full justify-start">
+                  <Link href="/trails">
+                    Bekijk alle trails
+                  </Link>
+                </Button>
+                <Button variant="outline" asChild className="w-full justify-start">
+                  <Link href="/locatie">
+                    Ontdek de locatie
+                  </Link>
+                </Button>
+                <Button variant="outline" asChild className="w-full justify-start">
+                  <Link href="/off-grid">
+                    Over het Off-Grid concept
+                  </Link>
+                </Button>
+                <Button variant="outline" asChild className="w-full justify-start">
+                  <Link href="/accommodatie">
+                    Meer over accommodatie
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           </div>

@@ -1,6 +1,8 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Mountain, Heart, Coffee, Camera, MapPin, TreePine } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Mountain, Heart, Coffee, Camera, MapPin, TreePine, ArrowRight } from 'lucide-react'
 
 const niederauFacts = [
   {
@@ -82,7 +84,7 @@ export function AustriaSection() {
         {/* Niederau Facts */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {niederauFacts.map((fact, index) => (
-            <Card key={index} className="text-center">
+            <Card key={index} className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
                   <fact.icon className="h-6 w-6 text-primary" />
@@ -98,11 +100,21 @@ export function AustriaSection() {
           ))}
         </div>
 
+        {/* Call to Action */}
+        <div className="text-center mt-12">
+          <Button size="lg" asChild>
+            <Link href="/locatie" className="flex items-center gap-2">
+              Ontdek alles over onze locatie
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
+
         {/* Niederau & Wildschonau Details */}
         <div className="mt-16">
           <h3 className="text-2xl font-bold text-center mb-8">Waarom Niederau & Wildschönau?</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card>
+            <Card className="hover:shadow-lg transition-shadow group">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
@@ -110,13 +122,13 @@ export function AustriaSection() {
                 </CardTitle>
                 <CardDescription>Het centrum van de regio</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
                 <div className="relative h-32 mb-4 rounded overflow-hidden">
                   <Image
                     src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=200&fit=crop"
                     alt="Niederau, Kitzbüheler Alpen"
                     fill
-                    className="object-cover"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
@@ -124,10 +136,16 @@ export function AustriaSection() {
                   wandelroutes en natuurlijke schoonheid. Perfect voor reflectie
                   en strategische workshops.
                 </p>
+                <Button variant="outline" asChild className="w-full">
+                  <Link href="/locatie#niederau" className="flex items-center justify-center gap-2">
+                    Meer over Niederau
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="hover:shadow-lg transition-shadow group">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <TreePine className="h-5 w-5" />
@@ -135,13 +153,13 @@ export function AustriaSection() {
                 </CardTitle>
                 <CardDescription>De groene vallei</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
                 <div className="relative h-32 mb-4 rounded overflow-hidden">
                   <Image
                     src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=400&h=200&fit=crop"
                     alt="Wildschönau, Kitzbüheler Alpen"
                     fill
-                    className="object-cover"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
@@ -149,6 +167,12 @@ export function AustriaSection() {
                   Uitstekende wandelmogelijkheden voor teams die houden van
                   natuurlijke schoonheid en avontuur.
                 </p>
+                <Button variant="outline" asChild className="w-full">
+                  <Link href="/locatie#wildschonau" className="flex items-center justify-center gap-2">
+                    Meer over Wildschönau
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           </div>

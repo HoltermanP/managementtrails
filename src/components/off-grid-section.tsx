@@ -1,5 +1,7 @@
+import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Smartphone, Focus, Users, Lock } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Smartphone, Focus, Users, Lock, ArrowRight } from 'lucide-react'
 
 const offGridBenefits = [
   {
@@ -54,6 +56,15 @@ export function OffGridSection() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button size="lg" asChild>
+              <Link href="/off-grid" className="flex items-center gap-2">
+                Lees meer over het Off-Grid concept
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

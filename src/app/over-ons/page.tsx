@@ -1,7 +1,9 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Users, Target, Award, Heart } from 'lucide-react'
+import { Users, Target, Award, Heart, ArrowRight } from 'lucide-react'
 
 const values = [
   {
@@ -233,7 +235,7 @@ export default function AboutPage() {
         <h2 className="text-3xl font-bold text-center mb-12">Onze Waarden</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, index) => (
-            <Card key={index} className="text-center">
+            <Card key={index} className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
                   <value.icon className="h-8 w-8 text-primary" />
@@ -247,6 +249,14 @@ export default function AboutPage() {
               </CardContent>
             </Card>
           ))}
+        </div>
+        <div className="text-center mt-8">
+          <Button size="lg" variant="outline" asChild>
+            <Link href="/trails" className="flex items-center gap-2">
+              Ontdek hoe onze waarden terugkomen in onze trails
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+          </Button>
         </div>
       </section>
 
@@ -265,13 +275,21 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
+        <div className="text-center mt-8">
+          <Button size="lg" variant="outline" asChild>
+            <Link href="/contact" className="flex items-center gap-2">
+              Word onderdeel van onze impact
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
       </section>
 
       {/* Team */}
       <section className="mb-16">
         <h2 className="text-3xl font-bold text-center mb-12">Ons Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card>
+          <Card className="hover:shadow-lg transition-shadow">
             <CardHeader className="text-center">
               <div className="mx-auto mb-4 w-24 h-24 bg-muted rounded-full flex items-center justify-center">
                 <Users className="h-12 w-12 text-muted-foreground" />
@@ -281,15 +299,18 @@ export default function AboutPage() {
                 Professionele coaches met meer dan 15 jaar ervaring in leiderschapsontwikkeling
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-4">
               <p className="text-sm text-muted-foreground">
                 Ons team bestaat uit gecertificeerde coaches die zelf succesvolle leiders zijn geweest.
                 Zij combineren diepgaande kennis van managementtheorieën met praktische ervaring.
               </p>
+              <Button variant="outline" asChild className="w-full">
+                <Link href="/trails">Bekijk onze trails</Link>
+              </Button>
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="hover:shadow-lg transition-shadow">
             <CardHeader className="text-center">
               <div className="mx-auto mb-4 w-24 h-24 bg-muted rounded-full flex items-center justify-center">
                 <Target className="h-12 w-12 text-muted-foreground" />
@@ -299,15 +320,18 @@ export default function AboutPage() {
                 Diepgaande kennis van de Oostenrijkse Alpen en lokale cultuur
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-4">
               <p className="text-sm text-muted-foreground">
                 Onze lokale partners kennen elke trail en elk bergpad. Zij zorgen ervoor dat
                 uw groep veilig en optimaal kan genieten van de Oostenrijkse natuur.
               </p>
+              <Button variant="outline" asChild className="w-full">
+                <Link href="/locatie">Ontdek de locatie</Link>
+              </Button>
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="hover:shadow-lg transition-shadow">
             <CardHeader className="text-center">
               <div className="mx-auto mb-4 w-24 h-24 bg-muted rounded-full flex items-center justify-center">
                 <Award className="h-12 w-12 text-muted-foreground" />
@@ -317,11 +341,14 @@ export default function AboutPage() {
                 Experts in teamdynamiek, strategie en persoonlijke ontwikkeling
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-4">
               <p className="text-sm text-muted-foreground">
                 Van psychologen tot strategieconsultants - ons netwerk van specialisten
                 zorgt ervoor dat elke trail aansluit bij uw specifieke ontwikkelbehoeften.
               </p>
+              <Button variant="outline" asChild className="w-full">
+                <Link href="/contact">Neem contact op</Link>
+              </Button>
             </CardContent>
           </Card>
         </div>
