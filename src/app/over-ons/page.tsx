@@ -72,7 +72,7 @@ export default function AboutPage() {
 
         <div className="relative h-96 rounded-lg overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"
+            src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop"
             alt="Team building in de bergen"
             fill
             className="object-cover"
@@ -122,7 +122,7 @@ export default function AboutPage() {
 
           <div className="relative h-96 rounded-lg overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop"
+              src="https://images.unsplash.com/photo-1464822759844-d150f39bf846?w=800&h=600&fit=crop"
               alt="Luit de Jong in de Oostenrijkse Alpen"
               fill
               className="object-cover"
@@ -137,7 +137,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="relative h-80 rounded-lg overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop"
+              src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=600&h=400&fit=crop"
               alt="Wildschonau dal in Tirol"
               fill
               className="object-cover"
@@ -347,7 +347,7 @@ export default function AboutPage() {
 
           <div className="relative h-64 rounded overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop"
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop"
               alt="Oostenrijkse cultuur en natuur"
               fill
               className="object-cover"

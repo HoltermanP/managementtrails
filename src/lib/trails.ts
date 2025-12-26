@@ -22,7 +22,7 @@ export const trails: Trail[] = [
     duration: '5 dagen',
     maxParticipants: 8,
     price: 4000,
-    image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1464822759844-d150f39bf846?w=800&h=600&fit=crop',
     highlights: [
       'Persoonlijke leiderschapsanalyse',
       'Team building oefeningen in de bergen',
@@ -46,7 +46,7 @@ export const trails: Trail[] = [
     duration: '5 dagen',
     maxParticipants: 8,
     price: 4000,
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop',
     highlights: [
       'Strategische visie oefeningen',
       'Innovatie workshops',
@@ -70,7 +70,7 @@ export const trails: Trail[] = [
     duration: '5 dagen',
     maxParticipants: 8,
     price: 4000,
-    image: 'https://images.unsplash.com/photo-1464822759844-d150f39bf846?w=800&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
     highlights: [
       'Team performance analyse',
       'Communicatie oefeningen',

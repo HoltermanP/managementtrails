@@ -43,7 +43,7 @@ export function AustriaSection() {
           {/* Image */}
           <div className="relative h-96 rounded-lg overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&h=600&fit=crop"
+              src="https://images.unsplash.com/photo-1464822759844-d150f39bf846?w=800&h=600&fit=crop"
               alt="Oostenrijkse Alpen - Tirol"
               fill
               className="object-cover"
@@ -113,7 +113,7 @@ export function AustriaSection() {
               <CardContent>
                 <div className="relative h-32 mb-4 rounded overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=200&fit=crop"
+                    src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=200&fit=crop"
                     alt="Niederau, Kitzbüheler Alpen"
                     fill
                     className="object-cover"
@@ -138,7 +138,7 @@ export function AustriaSection() {
               <CardContent>
                 <div className="relative h-32 mb-4 rounded overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=200&fit=crop"
+                    src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=400&h=200&fit=crop"
                     alt="Wildschönau, Kitzbüheler Alpen"
                     fill
                     className="object-cover"
