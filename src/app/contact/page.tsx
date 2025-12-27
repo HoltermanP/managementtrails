@@ -12,6 +12,7 @@ import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
+import { SafeImage } from '@/components/safe-image'
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Naam is verplicht'),
@@ -53,14 +54,27 @@ export default function ContactPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Neem Contact Op
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Heeft u vragen over onze management trails in Oostenrijk?
-            Wilt u meer informatie of een custom trail op maat? We helpen u graag verder.
-          </p>
+        {/* Hero Section */}
+        <div className="relative h-96 mb-12 rounded-lg overflow-hidden">
+          <SafeImage
+            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop"
+            alt="Contact Management Trails"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60" />
+          <div className="absolute inset-0 flex items-center justify-center text-center text-white px-4">
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                Neem Contact Op
+              </h1>
+              <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+                Heeft u vragen over onze management trails in Oostenrijk?
+                Wilt u meer informatie of een custom trail op maat? We helpen u graag verder.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -213,6 +227,14 @@ export default function ContactPage() {
                 <CardTitle>Over Management Trails</CardTitle>
               </CardHeader>
               <CardContent>
+                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                  <SafeImage
+                    src="https://images.unsplash.com/photo-1464822759844-d150f39bf846?w=600&h=400&fit=crop"
+                    alt="Management Trails team"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <p className="text-muted-foreground mb-4">
                   Wij zijn gespecialiseerd in het organiseren van inspirerende management trails
                   in de Oostenrijkse Alpen. Met meer dan 10 jaar ervaring helpen we bedrijven

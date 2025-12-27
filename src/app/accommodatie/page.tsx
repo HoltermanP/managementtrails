@@ -1,9 +1,9 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Home, Bed, Users, Wifi, Utensils, Mountain, ArrowLeft, CheckCircle, Coffee, Car } from 'lucide-react'
+import { SafeImage } from '@/components/safe-image'
 
 const features = [
   {
@@ -75,7 +75,7 @@ export default function AccommodatiePage() {
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
       <div className="relative h-96 mb-8 rounded-lg overflow-hidden">
-        <Image
+        <SafeImage
           src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1920&h=1080&fit=crop"
           alt="Luxe penthouse accommodatie"
           fill
@@ -131,7 +131,7 @@ export default function AccommodatiePage() {
       <section className="mb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="relative h-64 rounded-lg overflow-hidden">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&h=400&fit=crop"
               alt="Woonkamer"
               fill
@@ -139,7 +139,7 @@ export default function AccommodatiePage() {
             />
           </div>
           <div className="relative h-64 rounded-lg overflow-hidden">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&h=400&fit=crop"
               alt="Slaapkamer"
               fill
@@ -147,7 +147,7 @@ export default function AccommodatiePage() {
             />
           </div>
           <div className="relative h-64 rounded-lg overflow-hidden">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e4?w=600&h=400&fit=crop"
               alt="Keuken"
               fill
@@ -155,7 +155,7 @@ export default function AccommodatiePage() {
             />
           </div>
           <div className="relative h-64 rounded-lg overflow-hidden">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop"
               alt="Balkon met uitzicht"
               fill
@@ -163,7 +163,7 @@ export default function AccommodatiePage() {
             />
           </div>
           <div className="relative h-64 rounded-lg overflow-hidden">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=400&fit=crop"
               alt="Eetkamer"
               fill
@@ -171,7 +171,7 @@ export default function AccommodatiePage() {
             />
           </div>
           <div className="relative h-64 rounded-lg overflow-hidden">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=400&fit=crop"
               alt="Badkamer"
               fill

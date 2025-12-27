@@ -1,9 +1,9 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { MapPin, TreePine, Mountain, Camera, Heart, Coffee, ArrowLeft, Route, Users, Home } from 'lucide-react'
+import { SafeImage } from '@/components/safe-image'
 
 const niederauFacts = [
   {
@@ -56,7 +56,7 @@ export default function LocatiePage() {
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
       <div className="relative h-96 mb-8 rounded-lg overflow-hidden">
-        <Image
+        <SafeImage
           src="https://images.unsplash.com/photo-1464822759844-d150f39bf846?w=1920&h=1080&fit=crop"
           alt="Niederau & Wildschönau, Kitzbüheler Alpen"
           fill
@@ -110,7 +110,7 @@ export default function LocatiePage() {
       <section id="niederau" className="mb-16 scroll-mt-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
           <div className="relative h-96 rounded-lg overflow-hidden">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop"
               alt="Niederau, Kitzbüheler Alpen"
               fill
@@ -194,7 +194,7 @@ export default function LocatiePage() {
             </div>
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden order-1 lg:order-2">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&h=600&fit=crop"
               alt="Wildschönau, Kitzbüheler Alpen"
               fill
@@ -295,7 +295,7 @@ export default function LocatiePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="hover:shadow-lg transition-shadow">
             <div className="relative h-48">
-              <Image
+              <SafeImage
                 src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop"
                 alt="Bergwandelingen"
                 fill
@@ -314,7 +314,7 @@ export default function LocatiePage() {
           </Card>
           <Card className="hover:shadow-lg transition-shadow">
             <div className="relative h-48">
-              <Image
+              <SafeImage
                 src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
                 alt="Bergmeren"
                 fill
@@ -333,7 +333,7 @@ export default function LocatiePage() {
           </Card>
           <Card className="hover:shadow-lg transition-shadow">
             <div className="relative h-48">
-              <Image
+              <SafeImage
                 src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=400&h=300&fit=crop"
                 alt="Lokale Cultuur"
                 fill

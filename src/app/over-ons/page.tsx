@@ -1,9 +1,9 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Users, Target, Award, Heart, ArrowRight } from 'lucide-react'
+import { SafeImage } from '@/components/safe-image'
 
 const values = [
   {
@@ -73,7 +73,7 @@ export default function AboutPage() {
         </div>
 
         <div className="relative h-96 rounded-lg overflow-hidden">
-          <Image
+          <SafeImage
             src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop"
             alt="Team building in de bergen"
             fill
@@ -123,7 +123,7 @@ export default function AboutPage() {
           </div>
 
           <div className="relative h-96 rounded-lg overflow-hidden">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1464822759844-d150f39bf846?w=800&h=600&fit=crop"
               alt="Luit de Jong in de Oostenrijkse Alpen"
               fill
@@ -138,7 +138,7 @@ export default function AboutPage() {
         <h2 className="text-3xl font-bold text-center mb-12">Niederau & Wildschonau</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="relative h-80 rounded-lg overflow-hidden">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=600&h=400&fit=crop"
               alt="Wildschonau dal in Tirol"
               fill
@@ -373,7 +373,7 @@ export default function AboutPage() {
           </div>
 
           <div className="relative h-64 rounded overflow-hidden">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop"
               alt="Oostenrijkse cultuur en natuur"
               fill

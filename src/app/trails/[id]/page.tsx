@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -7,6 +6,7 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { MapPin, Clock, Users, Euro, CheckCircle, Home } from 'lucide-react'
 import { trails } from '@/lib/trails'
+import { SafeImage } from '@/components/safe-image'
 
 interface TrailPageProps {
   params: {
@@ -25,14 +25,14 @@ export default function TrailPage({ params }: TrailPageProps) {
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
       <div className="relative h-96 mb-8 rounded-lg overflow-hidden">
-        <Image
+        <SafeImage
           src={trail.image}
           alt={trail.title}
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="absolute bottom-6 left-6 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">{trail.title}</h1>
           <div className="flex items-center gap-4 text-lg">

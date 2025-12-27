@@ -1,9 +1,9 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Smartphone, Focus, Users, Lock, CheckCircle, ArrowLeft, Brain, Heart, Eye } from 'lucide-react'
+import { SafeImage } from '@/components/safe-image'
 
 const benefits = [
   {
@@ -76,7 +76,7 @@ export default function OffGridPage() {
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
       <div className="relative h-96 mb-8 rounded-lg overflow-hidden">
-        <Image
+        <SafeImage
           src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop"
           alt="Off-Grid in de natuur"
           fill
