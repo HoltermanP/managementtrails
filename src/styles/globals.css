@@ -4,48 +4,28 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --background: 40 33% 98%;
+    --foreground: 214 35% 17%;
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 214 35% 17%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 210 100% 40%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
-    --accent: 210 100% 50%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 84.2% 60.2%;
+    --popover-foreground: 214 35% 17%;
+    --primary: 211 44% 27%;
+    --primary-foreground: 40 33% 98%;
+    --secondary: 40 26% 93%;
+    --secondary-foreground: 214 35% 17%;
+    --muted: 40 22% 94%;
+    --muted-foreground: 214 14% 42%;
+    --accent: 40 26% 91%;
+    --accent-foreground: 214 35% 17%;
+    --destructive: 0 72% 45%;
     --destructive-foreground: 0 0% 98%;
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 210 100% 40%;
-    --radius: 0.75rem;
-  }
-
-  .dark {
-    --background: 0 0% 2%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 210 100% 60%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 8%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 8%;
-    --muted-foreground: 0 0% 65%;
-    --accent: 210 100% 65%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 55%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 12%;
-    --input: 0 0% 12%;
-    --ring: 210 100% 60%;
+    --border: 40 16% 87%;
+    --input: 40 14% 82%;
+    --ring: 211 44% 27%;
+    --radius: 0.375rem;
+    --bronze: 38 45% 44%;
+    --pine: 158 25% 26%;
   }
 }
 
@@ -53,29 +33,24 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+  html {
+    scroll-behavior: smooth;
   }
-  
-  html.dark {
-    color-scheme: dark;
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
 @layer utilities {
   .animate-fade-in {
-    animation: fadeIn 0.6s ease-in-out;
+    animation: fadeIn 0.7s ease-in-out;
   }
-  
+
   .animate-slide-up {
-    animation: slideUp 0.6s ease-out;
+    animation: slideUp 0.7s ease-out;
   }
-  
-  .animate-scale-in {
-    animation: scaleIn 0.5s ease-out;
-  }
-  
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -84,40 +59,15 @@
       opacity: 1;
     }
   }
-  
+
   @keyframes slideUp {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(16px);
     }
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
-  
-  @keyframes scaleIn {
-    from {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  .gradient-mountain {
-    background: linear-gradient(135deg, hsl(210, 100%, 50%) 0%, hsl(200, 100%, 40%) 50%, hsl(190, 100%, 35%) 100%);
-  }
-  
-  .text-gradient {
-    background: linear-gradient(135deg, hsl(210, 100%, 60%) 0%, hsl(200, 100%, 55%) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
 }
-
-
-
